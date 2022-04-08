@@ -1,27 +1,60 @@
-# STOCKFRONT
+# STOCK APP FRONT
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.2.
+Este proyecto fue generado con [Angular CLI](https://github.com/angular/angular-cli) versión 13.3.2. 1️⃣
 
-## Development server
+## Descripción 🚀
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+_Sistema de inventarios para comerciantes_
 
-## Code scaffolding
+Mira **Despliegue** para conocer como desplegar el proyecto.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Instalación 🔑
 
-## Build
+* Clona este repositorio en tú máquina local
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+git clone https://github.com/JuanDaCalderon/STOCK_FRONT.git
 
-## Running unit tests
+_Para instalar las dependencias con node_
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* **npm install** - nos genera la carpeta node-modules con las dependencias descritas en el *package.json* instaladas
+
+## Servidor de desarrollo 🕵️
+
+Correr `ng serve` para el servidor de desarrollo. Navegar a `http://localhost:4200/`. La aplicación recargara automáticamente si se detecta algún cambio en los archivos raíces.
+
+## Requerimientos 🚀
+
+- node.js v16.14.0
+- npm 8.3.1
+- Angular cli 13.3.2.
+
+## Despliegue 📦
+
+Correr `ng build` para compilar el proyecto. La compilación sera guardada en `dist/`.
+
+## Testing 🧪
+
+Correr `ng test` para ejecutar los test unitarios.
 
 ## Running end-to-end tests
 
 Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
+## Construido con 🛠️
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+* [Typescript](https://www.typescriptlang.org/) - Lenguaje de programación
+* [Node](https://nodejs.org/es/) - Manejador de dependencias
+* [Angular](https://angular.io/) - Framework
+* [Bootstrap](https://getbootstrap.com/) - Usado para dar estilos
+
+## Versionado 📌
+
+V1.0.0
+
+## Autores ✒️
+
+* **Juan David Calderón Jiménez** - - (https://github.com/JuanDaCalderon)
+
+## Gratitud 🎁
+---
+⌨️ con ❤️ por [JuanDaCalderon](https://github.com/JuanDaCalderon) 😊
