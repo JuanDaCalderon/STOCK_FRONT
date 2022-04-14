@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+@use './sass/colors' as *;
+@use './sass/fonts' as *;
+
+body {
+    font-family: $primaryFont;
+    height: 100%;
+    background: url('./assets/IMG/bodybg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, input{
+    color: $black;
+}

@@ -1,0 +1,228 @@
+@use '../../../sass/colors' as *;
+@use '../../../sass/fonts' as *;
+body {
+    overflow: hidden;
+}
+.frame{
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    position: absolute;
+    z-index: -1;
+    &:nth-child(1) {
+        background: $primaryPurple;
+        opacity: 0.4;
+        top: (random(300) - 100) + px;
+        left: (random(1500) - 100) + px;
+    }
+    &:nth-child(2) {
+        background: $secondaryPurple;
+        opacity: 0.3;
+        top: (random(900) - 100) + px;
+        left: (random(1600) - 100) + px;
+    }
+    &:nth-child(3) {
+        background: $primaryPurple;
+        opacity: 0.4;
+        top: (random(250) - 100) + px;
+        left: (random(1500) - 100) + px;
+    }
+    &:nth-child(4) {
+        background: $secondaryPurple;
+        opacity: 0.3;
+        top: (random(900) - 100) + px;
+        left: (random(1600) - 100) + px;
+    }
+    &:nth-child(5) {
+        background: $primaryPurple;
+        opacity: 0.4;
+        top: (random(900) - 100) + px;
+        left: (random(1500) - 100) + px;
+    }
+    &:nth-child(6) {
+        background: $secondaryPurple;
+        opacity: 0.3;
+        top: (random(900) + 100) + px;
+        left: (random(1600) - 100) + px;
+    }
+    &:nth-child(7) {
+        background: $complementaryPurple;
+        opacity: 0.5;
+        top: (random(950) - 100) + px;
+        left: (random(1500) - 100) + px;
+    }
+}
+
+.login{
+    div.card{
+        border-radius: 30px;
+        .form-signin {
+            width: 100%;
+            padding: 80px 60px;
+            margin: auto;
+            .form-floating:focus-within {
+                z-index: 2;
+            }
+            h1{
+                font-family: $secondaryFont;
+            }
+            .email, .password{
+                div.icon{
+                    border-radius: 0.3rem 0 0 0.3rem;
+                    border: 1px solid #ced4da;
+                    border-right: none;
+                }
+                input{
+                    border-radius: 0 0.3rem 0.3rem 0;
+                }
+            }
+            input.form-check-input{
+                &:checked{
+                    background-color: $secondaryPurple;
+                    border-color: $secondaryPurple;
+                }
+                &:focus {
+                    border-color: $complementaryPurple;
+                    box-shadow: 0 0 0 0.25rem rgba(142, 46, 233, 0.25);
+                }
+            }
+            .btn-purple {
+                color: #fff;
+                background-color: $secondaryPurple;
+                border-color: $secondaryPurple;
+                &:active{
+                    background-color: $secondaryPurple;
+                    border-color: $secondaryPurple;
+                }
+                &:focus{
+                    background-color: $secondaryPurple;
+                    border-color: $secondaryPurple;
+                    box-shadow: 0 0 0 0.25rem rgba(171, 49, 253, 0.5);
+                }
+                &:hover{
+                    background-color: $primaryPurple;
+                    border-color: $primaryPurple;
+                }
+            }
+            a:hover {
+                transform: scale(1.02);
+            }
+        }
+    }
+}
+
+@media (max-width: 1400px) {
+    .frame{
+        &:nth-child(1) {
+            top: (random(800) - 100) + px;
+            left: (random(1300) - 100) + px;
+        }
+        &:nth-child(2) {
+            top: (random(800) - 100) + px;
+            left: (random(1300) - 100) + px;
+        }
+        &:nth-child(3) {
+            display: none;
+        }
+        &:nth-child(4) {
+            top: (random(800) - 100) + px;
+            left: (random(1300) - 100) + px;
+        }
+        &:nth-child(5) {
+            display: none;
+        }
+        &:nth-child(6) {
+            top: (random(800) - 100) + px;
+            left: (random(1300) - 100) + px;
+        }
+        &:nth-child(7) {
+            top: (random(800) - 100) + px;
+            left: (random(1300) - 100) + px;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .frame{
+        &:nth-child(1) {
+            top: (random(700) - 100) + px;
+            left: (random(1100) - 100) + px;
+        }
+        &:nth-child(2) {
+            top: (random(700) - 100) + px;
+            left: (random(1100) - 100) + px;
+        }
+        &:nth-child(3) {
+            display: none;
+        }
+        &:nth-child(4) {
+            top: (random(700) - 100) + px;
+            left: (random(1100) - 100) + px;
+        }
+        &:nth-child(5) {
+            display: none;
+        }
+        &:nth-child(6) {
+            top: (random(700) - 100) + px;
+            left: (random(1100) - 100) + px;
+        }
+        &:nth-child(7) {
+            top: (random(700) - 100) + px;
+            left: (random(1100) - 100) + px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .frame{
+        &:nth-child(1) {
+            top: (random(700) - 100) + px;
+            left: (random(900) - 100) + px;
+        }
+        &:nth-child(2) {
+            top: (random(700) - 100) + px;
+            left: (random(900) - 100) + px;
+        }
+        &:nth-child(3) {
+            display: none;
+        }
+        &:nth-child(4) {
+            top: (random(700) - 100) + px;
+            left: (random(900) - 100) + px;
+        }
+        &:nth-child(5) {
+            display: none;
+        }
+        &:nth-child(6) {
+            top: (random(700) - 100) + px;
+            left: (random(900) - 100) + px;
+        }
+        &:nth-child(7) {
+            top: (random(700) - 100) + px;
+            left: (random(900) - 100) + px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .frame{
+        display: none;
+    }
+    .login {
+        div.card{
+            .form-signin {
+                padding: 50px;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .login {
+        div.card{
+            .form-signin {
+                padding: 40px 10px;
+            }
+        }
+    }
+}
