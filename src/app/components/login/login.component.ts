@@ -1,4 +1,5 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -7,6 +8,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.None,
 })
 export class LoginComponent implements OnInit {
+  @ViewChild('form', { static: true }) signupForm: NgForm | undefined;
   height: string = '900px';
 
   constructor() {
@@ -14,6 +16,11 @@ export class LoginComponent implements OnInit {
   }
 
   ngOnInit(): void {
+
+  }
+
+  onSubmit() {
+    console.log(this.signupForm?.value);
   }
 
 }

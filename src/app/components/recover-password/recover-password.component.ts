@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-recover-password',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./recover-password.component.scss']
 })
 export class RecoverPasswordComponent implements OnInit {
+  @ViewChild('form', { static: true }) signupForm: NgForm | undefined;
   height: string = '900px';
 
   constructor() {
@@ -13,6 +15,10 @@ export class RecoverPasswordComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  }
+
+  onSubmit() {
+    console.log(this.signupForm?.value);
   }
 
 }
